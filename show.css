@@ -1,0 +1,254 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(bgtrabalho.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.bg2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 99.2vw;
+    height: 100%;
+    background-image: url(bg2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+.bg2 h1 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 60px;
+    margin: 0 20%;
+}
+
+p, h1 {
+    color: white;
+}
+
+
+.ano {
+    display: flex;
+    align-items: center;
+  }
+
+.a {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.a2 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+hr {
+    height: 50px;
+    border: none;
+    border-left: 1px solid rgb(245, 231, 172);
+    margin: 0 3%;
+}
+
+.linhas {
+    color: #5f1348;
+    border-left: 0.5px solid;
+    width: 0.5px;
+    height: 90px;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .ano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.texto {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.texto2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+button {
+    margin: 50px;
+    color: #1D132D;
+    font-size: 20px;
+    font-weight: bold;
+    width: 280px;
+    height: 60px; 
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #99E24F;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #521f41;
+    padding: 1em;
+    text-align: center;
+}
+
+footer img {
+    width: 22px;
+    height: 30px;
+}
+
+.infos {
+    display: flex;
+    color: white;
+    background-image: linear-gradient(90deg,rgba(26,0,69,1) 44%,rgba(52,13,67,1) 100%);
+    padding: 50px;
+    font-size: 20px;
+    
+}
+
+span {
+    color: #FF0045;
+}
+
+.redes img {
+    color: white;
+}
+
+.teams img {
+    height: 80px;
+}
+
+.teams {
+    padding: 10px;
+    color: white;
+    max-width: 220px;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: #1b132A;
+}
+
+.org {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    gap: 1.25em;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 80px;
+}
+
+/* .ingressos {
+    background-image: linear-gradient(rgba(52,13,67,1) 100%, 90deg,rgba(26,0,69,1) 44%);
+} */
+
+.ingressos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.preco h3 {
+    color: black;
+    font-size: 70px;
+    margin: -8px 1px 20px;
+    padding-top: 30px 0 10px;
+    text-align: center;
+}
+
+.preco p {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.preco span p {
+    font-size: 15px;
+    margin: 30px 30px 10px;
+    padding-top: 30px 0 10px;
+    font-weight: 600;
+}
+
+.vip {
+    border-top: 10px solid #68d9f5;
+}
+
+.preco {
+    padding: 50px;
+    color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: white;
+}
+
+.horizontal {
+    height: 20px;
+    border: none;
+    border-top: 1px solid rgb(243, 233, 193);
+    margin: 10px 3%;
+}
